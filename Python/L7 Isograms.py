@@ -11,3 +11,8 @@
 def is_isogram(string):
     results = [False if string.lower().count(c)>1 else True for c in string.lower()]
     return False not in results 
+
+# Solution above is overkill...seen the solution after submitting
+
+# def is_isogram(string):
+#     return len(string) == len(set(string.lower()))
